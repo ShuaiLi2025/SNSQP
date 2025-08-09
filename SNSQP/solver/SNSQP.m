@@ -3,7 +3,7 @@ function Out = SNSQP(n,s,Q0,q0,Qi,qi,ci,ineqA,ineqb,eqA,eqb,lb,ub,pars)
 % This code aims at solving the sparse SQCQP in the form of
 %
 %         min             (1/2)(x'{Q_0}x)+q_0'x, 
-%         s.t. (1/2)x'8Qi{i}*x+qi(:,i)'*x+ci(i)<=0, i = 1,...,k,
+%         s.t. (1/2)x'*Qi{i}*x+qi(:,i)'*x+ci(i)<=0, i = 1,...,k,
 %                                 ineqA*x-ineqb<=0,
 %                                      eqA*x-eqb=0,
 %                                        lb<=x<=ub,
@@ -72,7 +72,7 @@ itlser,gamma,sigma,alpha0,lb,ub] = setparameters(n,s,Qi,ineqA,eqA,lb,ub,pars);
 
 % The main body
 if  show
-    fprintf('\n Start to run the sover -- SNSQP\n');
+    fprintf('\n Start to run the solver -- SNSQP\n');
     fprintf(' -------------------------------------------------\n');
     fprintf(' Iter        Error        Objective      Time(sec)\n');
     fprintf(' -------------------------------------------------\n');
@@ -578,6 +578,7 @@ function x = my_cg(fx,b,cgtol,cgit,x)
     end 
   
 end
+
 
 
 

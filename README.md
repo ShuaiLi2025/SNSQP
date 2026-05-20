@@ -1,6 +1,6 @@
 # SNSQP
 This solver was created based on the algorithm proposed by
 
-Shuai Li, Shenglong Zhou, Ziyan Luo, Sparse Quadratically Constrained Quadratic Programming via Semismooth Newton Method, arXiv:2503.15109, 2025.
+Li, Shuai, Shenglong Zhou, and Ziyan Luo. "Sparse quadratically constrained quadratic programming via semismooth newton method." Mathematical Programming Computation (2026): 1-44.
 
 Please credit this paper if you use the code for your research.
